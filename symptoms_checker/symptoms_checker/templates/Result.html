@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diagnosis</title>>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('{{ url_for("static", filename="css/background1.jpg") }}'); /* Replace 'background.jpg' with your actual background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* This keeps the background image fixed while scrolling */
+        }
+        .header {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            color: #333; /* Dark text color */
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .box4 {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px; /* Limit the width of the box */
+        }
+        .box4 p {
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker shade of green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Diagnosis</h1>
+    </div>
+    <center>
+        <div class="box4">
+            {% for disease in diseases %}
+                {% for precaution in disease.split('&') %}
+                    <p>{{ precaution }}</p>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </center>
+    <form action="/" method="GET">
+        <div class="header1">
+            <center>
+                <br>
+                <input type="submit" value="Go to Home">
+                <br><br>
+            </center>
+        </div>
+    </form>
+</body>
+</html>

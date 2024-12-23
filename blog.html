@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f2f1; /* Light blue background */
+            color: #1a237e; /* Dark blue text color */
+        }
+
+        header {
+            background-color: #1a237e; /* Dark blue header background */
+            color: #ffffff; /* White header text color */
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #0d47a1; /* Darker blue border bottom */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        p.subtitle {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        nav {
+            background-color: #0d47a1; /* Darker blue navigation background */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff; /* White navigation link color */
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-right: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1e88e5; /* Hover background color */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        article {
+            flex: 1 1 300px;
+            background-color: #ffffff; /* White article background */
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        article h2 {
+            color: #1a237e; /* Dark blue heading color */
+            margin-top: 0;
+        }
+
+        article p {
+            color: #333333; /* Dark gray article text color */
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #1a237e; /* Dark blue footer background */
+            color: #ffffff; /* White footer text color */
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            article {
+                width: 90%;
+            }
+        }
+    </style>
+    <title>Blogging Website Layout</title> 
+</head> 
+
+<body> 
+    <header> 
+        <h1>Swasthya</h1> 
+        <p>Nurturing Wellness</p> 
+    </header> 
+
+    <nav> 
+        <a href="#">Home</a> 
+        <a href="#">Diabetes</a> 
+        <a href="#">Parkinsons</a> 
+        <a href="#">Heart Disease</a> 
+        <a href="#">Mental Health</a> 
+    </nav> 
+
+    <div class="container"> 
+        <main> 
+            <article> 
+                <h2>Diabetes</h2> 
+                <p class="post-meta"> 
+                    Published on December 11, 2023 by Swasthya
+                </p> 
+                <p> 
+                In the intricate landscape of health management, diabetes stands as a sentinel, 
+                requiring vigilance and perseverance. It's a condition where the body's delicate 
+                balance of blood sugar levels becomes a daily battlefield. From meticulously calculating 
+                insulin doses to navigating dietary choices with precision, individuals with diabetes face 
+                a constant series of decisions to maintain equilibrium. The journey encompasses not only physical 
+                measures but also emotional fortitude, as the fear of complications looms. Yet, amidst the challenges, 
+                there's a beacon of hope in education, support networks, and advancements in treatment, offering a path 
+                towards empowered living with diabetes.
+            </article> 
+
+            <article> 
+                <h2>Parkinsons</h2> 
+                <p class="post-meta"> 
+                    Published on December 10, 2023 by Swasthya 
+                </p> 
+                <p> 
+                Parkinson's disease casts a shadow upon the graceful dance of movement, 
+                imposing its presence with a symphony of tremors, stiffness, and imbalance. 
+                It's a condition that stealthily encroaches upon one's autonomy, disrupting the fluidity 
+                of everyday tasks. Each step becomes a negotiation with rigidity, each gesture a defiance 
+                against the tremulous rhythm of the body. Yet, amidst the struggle, there are rays of optimism 
+                in the form of treatment options, from medication regimens to innovative therapies like deep 
+                brain stimulation. Personal narratives of resilience and research breakthroughs serve as guiding lights, 
+                illuminating a path of hope and dignity in the face of Parkinson's.
+                </p> 
+            </article> 
+
+            <article> 
+                <h2>Heart Disease</h2> 
+                <p class="post-meta"> 
+                    Published on December 09, 2023 by Swasthya 
+                </p> 
+                <p> 
+                Within the intricate network of veins and arteries lies the heart,
+                a symbol of vitality and resilience, yet vulnerable to the insidious 
+                grasp of heart disease. It's a condition that silently creeps upon its victims,
+                fueled by factors like high cholesterol, hypertension, and lifestyle habits.
+                The journey through heart disease encompasses a spectrum of experiences,
+                from the subtle warnings of chest discomfort to the sudden, harrowing grip of 
+                cardiac arrest. Yet, in the realm of cardiac care, there exists a tapestry of
+                interventions, from lifestyle modifications to surgical procedures, woven together 
+                with threads of hope and healing. Through education, early detection, and proactive measures, 
+                individuals can navigate the maze of heart disease with strength and determination.
+                </p> 
+            </article> 
+
+            <article> 
+                <h2>Mental Health</h2> 
+                <p class="post-meta"> 
+                    Published on December 08, 2023 by Swasthya 
+                </p> 
+                <p> 
+                In the vast expanse of human experience, mental health emerges as a 
+                cornerstone of well-being, yet often cloaked in shadows of stigma and 
+                misunderstanding. It's a realm where the complexities of emotion and 
+                cognition intersect, shaping one's perceptions, behaviors, and relationships. 
+                Within the tapestry of mental health, there are myriad threads, from the anxious
+                whispers of generalized anxiety disorder to the profound depths of depression
+                and the kaleidoscope of mood swings in bipolar disorder. Yet, amidst the turbulence,
+                there exists a landscape of healing, nurtured by compassion, therapy, and medication.
+                Through destigmatization and open dialogue, individuals can embark on a journey of
+                self-discovery and resilience, reclaiming their narratives and finding solace in the embrace
+                of community and support.
+                </p> 
+            </article> 
+        </main> 
+
+    <footer> 
+        <p>© 2024 Your Blog Name. All rights reserved.</p> 
+    </footer> 
+</body> 
+</html>

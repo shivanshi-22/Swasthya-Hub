@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('pawel-czerwinski-Qiy4hr18aGs-unsplash.jpg');
+  /* You can also specify additional background properties */
+    background-size: cover; /* Makes sure the image covers the entire background */
+}
+
+.main {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    background-color: rgb(191, 0, 255);
+    border-radius: 10px 10px 0px 0px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border: none;
+}
+
+.title img {
+    align-self: center;
+    width: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 30px 30px 30px;
+    width: 400px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 020px;
+}
+
+.inputs input {
+    width: 70px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: rgb(191, 0, 255);
+    border-bottom: 2px solid;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 150px;
+    margin: 20px 10px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(254, 243, 255);
+    color: rgb(191, 0, 255);
+    border: 2px solid rgb(191, 0, 255);
+    font-weight: bold;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(191, 0, 255);
+    border: none;
+}
+
+#bmiResult {
+    color: rgb(191, 0, 255);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.range-container {
+    margin-top: 30px;
+    display: flex
+}
+
+.range {
+    width: 100px;
+}
+
+.range h5 {
+    padding-top: 5px;
+    color: rgb(191, 0, 255);
+}
+
+.underweight {
+    border-top: 3px solid rgb(12, 137, 238);
+}
+
+.healthy {
+    border-top: 3px solid rgb(0, 137, 0);
+}
+
+.overweight {
+    border-top: 3px solid rgb(227, 212, 47);
+}
+
+.obese {
+    border-top: 3px solid rgb(255, 0, 0);
+}

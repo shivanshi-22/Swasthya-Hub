@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator for Adults</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./bmi_style.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="title">
+            <img src="https://cdn-icons-png.flaticon.com/512/4349/4349072.png" alt="">
+            <h1>BMI Calculator for Adults</h1>
+        </div>
+
+        <div class="container">
+
+
+
+            <div class="calculator-container">
+                
+                <div class="input-container">
+                    <div class="inputs">
+                        <label for="height">Height (cm):</label>
+                        <input type="text" id="height" oninput="validateNumberInput(this)">
+                    </div>
+                    <div class="inputs">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="text" id="weight" oninput="validateNumberInput(this)">
+                    </div>
+                </div>
+
+                <button id="resetButton">Reset</button>
+                <button id="calculateBMI">Calculate</button>
+            </div>
+
+            <div class="result-container">
+                <p id="bmiResult">0.0</p>
+                <p id="rangeResult">Please enter your height and weight. <h4 id="range"> </h4></p>
+            </div>
+
+            <div class="range-container">
+                <div class="range underweight">
+                    <h5>Underweight</h5>
+                    <small>Below 18.5</small>
+                </div>
+                <div class="range healthy">
+                    <h5>Healthy</h5>
+                    <small>18.5 - 24.9</small>
+                </div>
+                <div class="range overweight">
+                    <h5>Overweight</h5>
+                    <small>25 - 29.9</small>
+                </div>
+                <div class="range obese">
+                    <h5>Obese</h5>
+                    <small>30 and Above</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./bmi_script.js"></script>
+</body>
+</html>

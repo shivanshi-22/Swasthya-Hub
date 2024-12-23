@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entering Symptoms</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('{{ url_for("static", filename="css/background.jpg") }}'); /* Replace 'background.jpg' with your actual background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* This keeps the background image fixed while scrolling */
+        }
+        .header {
+            background-color: #3cb0fd; /* Light blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .box3 {
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity of the background color */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            color: black; /* Change text color to black */
+        }
+        input[type="text"] {
+            width: calc(100% - 20px); /* Adjust the width to accommodate the padding */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #3cb0fd; /* Light blue */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button[type="submit"]:hover {
+            background-color: #2895c3; /* Darker shade of light blue */
+        }
+        table {
+            width: 100%;
+            color: black; /* Change text color to black */
+        }
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    </div>
+    <form action="{{ url_for('result')}}" method="post">
+        <div class="box3">
+            From the following symptom list, select the symptoms:<br><br>
+            <table>
+                <td>abnormal menstruation</td>
+                        <td>acidity</td>
+                        <td>altered sensorium</td>
+                        <td>anxiety</td>
+                        <td>back pain</td>
+                        <td>blackheads</td>
+                        <td>bladder discomfort</td>
+                        <td>blister</td>
+                        <td>blood in sputum</td>
+                        <td>bloody stool</td>
+                        <td>blurred and distorted vision</td>
+                        <td>breathlessness</td>
+                        <td>bruising</td>
+                        <td>burning micturition</td>
+
+                    </tr>
+                    <tr>
+                        <td>chest pain</td>
+                        <td>chills</td>
+                        <td>dehydration</td>
+                        <td>dischromic patches</td>
+                        <td>extra marital contacts</td>
+                        <td>family history</td>
+                        <td>fatigue</td>
+                        <td>headache</td>
+                        <td>hip joint pain</td>
+                        <td>inflammatory nails</td>
+                        <td>movement stiffness</td>
+                        <td>belly pain</td>
+                        <td>brittle nails</td>
+                        <td>coma</td>
+                        <td>constipation</td>
+                    </tr>
+                    <tr>
+                        <td>continuous sneezing</td>
+                        <td>cough</td>
+                        <td>cramps</td>
+                        <td>dark urine</td>
+                        <td>diarrhoea</td>
+                        <td>distention of abdomen</td>
+                        <td>dizziness</td>
+                        <td>excessive hunger</td>
+                        <td>high fever</td>
+                        <td>internal itching</td>
+                        <td>loss of balance</td>
+                        <td>muscle weakness</td>
+                        <td>pus filled pimples</td>
+                        <td>cold hands and feets</td>
+                        <td>congestion</td>
+                    </tr>
+                    <tr>
+                        <td>continuous feel of urine</td>
+                        <td>depression</td>
+                        <td>fluid overload</td>
+                        <td>irritation in anus</td>
+                        <td>knee pain</td>
+                        <td>loss of appetite</td>
+                        <td>muscle wasting</td>
+                        <td>nausea</td>
+                        <td>nodal skin eruptions</td>
+                        <td>painful walking</td>
+                        <td>red sore around nose</td>
+                        <td>scurring</td>
+                        <td>shivering</td>
+                        <td>silver like dusting</td>
+                        <td>skin rash</td>
+                    </tr>
+                    <tr>
+                        <td>sunken eyes</td>
+                        <td>sweating</td>
+                        <td>vomiting</td>
+                        <td>fast heart rate</td>
+                        <td>foul smell of urine</td>
+                        <td>history of alcohol consumption</td>
+                        <td>increased appetite</td>
+                        <td>lack of concentration</td>
+                        <td>muscle pain</td>
+                        <td>neck pain</td>
+                        <td>obesity</td>
+                        <td>pain during bowel movements</td>
+                        <td>passage of gases</td>
+                        <td>patches in throat</td>
+                        <td>skin peeling</td>
+                    </tr>
+                    <tr>
+                        <td>spinning movements</td>
+                        <td>spotting  urination</td>
+                        <td>stiff neck</td>
+                        <td>stomach pain</td>
+                        <td>watering from eyes</td>
+                        <td>weakness of one body side</td>
+                        <td>irregular sugar level</td>
+                        <td>lethargy</td>
+                        <td>pain in anal region</td>
+                        <td>prominent veins on calf</td>
+                        <td>swelling joints</td>
+                        <td>swelling of stomach</td>
+                        <td>ulcers on tongue</td>
+                        <td>unsteadiness</td>
+                        <td>weakness in limbs</td>
+                    </tr>
+                    <tr>
+                        <td>yellow crust ooze</td>
+                        <td>yellowish skin</td>
+                        <td>enlarged thyroid</td>
+                        <td>indigestion</td>
+                        <td>irritability</td>
+                        <td>mild fever</td>
+                        <td>mucoid sputum</td>
+                        <td>small dents in nails</td>
+                        <td>swollen blood vessels</td>
+                        <td>yellowing of eyes</td>
+                        <td>malaise</td>
+                        <td>mood swings</td>
+                        <td>swollen legs</td>
+                        <td>weight loss</td>
+                        <td>palpitations</td>
+                    </tr>
+                    <tr>
+                        <td>polyuria</td>
+                        <td>receiving blood transfusion</td>
+                        <td>loss of smell</td>
+                        <td>receiving unsterile injections</td>
+                        <td>red spots over body</td>
+                        <td>restlessness</td>
+                        <td>rusty sputum</td>
+                        <td>slurred speech</td>
+                        <td>stomach bleeding</td>
+                        <td>toxic look (typhos)</td>
+                        <td>visual disturbances</td>
+                        <td>pain behind the eyes</td>
+                        <td>yellow urine</td>
+                        <td>phlegm</td>
+                        <td>puffy face and eyes</td>
+                    </tr>
+                    <tr>
+                        <td>swelled lymph nodes</td>
+                        <td>drying and tingling lips</td>
+                        <td>swollen extremeties</td>
+                        <td>acute liver failure</td>
+                        <td>redness of eyes</td>
+                        <td>weight gain</td>
+                        <td>runny nose</td>
+                        <td>sinus pressure</td>
+                        <td>throat irritation</td>
+                    </tr>
+            </table>
+        </div>
+        <label for="symps"></label>
+        <input type="text" id="symps" name="symps" placeholder="Enter either a single symptom or multiple symptoms separated by commas(',')">
+        <button type="submit">Diagnose</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/*=========================================
+            Global Styling
+===========================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-radius: 100px;
+    padding: 1.5rem 3rem;
+    transition: 0.3s ease all;
+    text-transform: capitalize;
+    background: linear-gradient(45deg, #FBA24F, #FF1E1E);
+}
+
+.btn:hover {
+    background: linear-gradient(-45deg, #FBA24F, #FF1E1E);
+}
+
+.container {
+    /* 120rem = 1200px */
+    width: 120rem;
+    margin: 0 auto;
+}
+
+/*=========================================
+            Hero Section Styling
+===========================================*/
+.container {
+    padding: 5rem 0;
+    display: flex;
+}
+
+.content_box {
+    width: 50%;
+}
+
+.hero_heading {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #575757;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.hero_heading span {
+    color: #FBA24F;
+}
+
+.body_text {
+    font-size: 1.8rem;
+    color: #828282;
+    font-weight: 400;
+    margin: 3rem 5rem 5rem 0;
+    line-height: 2;
+}
+
+
+.img_box {
+    width: 50%;
+}
+
+.img_box img {
+    width: 100%;
+
+}
+
+/*=========================================
+            Hero Section Styling
+===========================================*/
+.about_section {
+    background-color: rgba(252, 142, 73, 0.1);
+    background-image: url(/images/about_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem 0;
+}
+
+.about_section .container {
+    padding-top: 5rem;
+    padding-bottom: 0;
+    display: flex;
+}
+
+.about_section img {
+    width: 60%;
+}
+
+.primary_heading {
+    font-size: 5.4rem;
+    color: #707070;
+}
+
+.about_section .content_box {
+    margin-top: 7rem;
+}
+
+.about_section .body_text {
+    color: #18191F;
+    font-weight: 500;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+
+}
+
+/*=========================================
+            Hero Section Styling
+===========================================*/
+.body_text span {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.recipes_section .container {
+    display: block;
+}
