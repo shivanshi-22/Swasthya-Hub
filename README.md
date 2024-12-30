@@ -46,3 +46,9 @@ To run Swasthya-Hub locally:
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP
 - **Database**: MySQL
+
+## Team Members: 
+1. SAKSHAM KUMAR DAHIYA
+2. SAMRIDDHI GUPTA
+3. SANKRISHNA GOEL
+4. KHUSHI GOEL
